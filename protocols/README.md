@@ -1,39 +1,49 @@
-# PACT-System Operational Protocols
+# PACT-System Partnership Protocols
 
-This directory contains specific, operational protocols that define mandatory procedures and standards for various aspects of the PACT-System framework and for agents/systems operating under its governance.
+This directory contains operational protocols that guide collaborative interactions within the PACT-System framework. These protocols maintain mission control clarity while supporting partnership development between all participants.
 
-These protocols are intended to be actionable and, where applicable, verifiable. They complement the higher-level principles found in `../core/principles.md` and the overall framework description in `../README.md`.
+These protocols provide actionable guidance while remaining flexible enough to support partnership growth. They complement the partnership principles in `../core/principles.md` and the overall framework in `../README.md`.
 
 ## Available Protocols
 
-*   **Core Governance & Compliance:**
-    *   [`pact_compliance_protocol.md`](./pact_compliance_protocol.md): Defines the self-check compliance procedures and verification token requirements for PACT-System adherence.
-    *   [`implementation_permission.md`](./implementation_permission.md): Governs how implementation permission is requested, granted, documented, and managed.
-    *   [`permission_verification.md`](./permission_verification.md): Details the process for verifying explicit user permission before actions.
-    *   [`mode_transition.md`](./mode_transition.md): Rules for transitioning between operational modes (e.g., Planning and Implementation).
+*   **Core Partnership & Alignment:**
+    *   [`pact_compliance_protocol.md`](./core_governance/pact_compliance_protocol.md): Alignment verification procedures ensuring partnership health and operational clarity.
+    *   [`implementation_permission.md`](./core_governance/implementation_permission.md): How partners establish agreement on implementation actions.
+    *   [`permission_verification.md`](./core_governance/permission_verification.md): Process for verifying explicit agreement on specific actions.
+    *   [`mode_transition.md`](./core_governance/mode_transition.md): Progressive autonomy stages and transitions between operational modes.
 
-*   **Communication & State Management:**
-    *   [`response_tags.md`](./response_tags.md): Defines the standardized tag system for structured communication.
-    *   [`state_reference_protocol.md`](./state_reference_protocol.md): Governs how saved states are referenced and loaded (e.g., using `@@reference {TAG}`).
-    *   [`progress_tracking_protocol.md`](./progress_tracking_protocol.md): Outlines how to track operational progress and maintain session state, including the `CurrentSessionState` concept.
-    *   [`interruption_handling.md`](./interruption_handling.md): Procedures for managing interruptions and ensuring task resumption.
+*   **Communication & Shared Context:**
+    *   [`response_tags.md`](./communication_and_state/response_tags.md): Standardized indicators for clear partnership communication.
+    *   [`state_reference_protocol.md`](./communication_and_state/state_reference_protocol.md): How partners reference and build on shared experiences (e.g., `@@reference {TAG}`).
+    *   [`progress_tracking_protocol.md`](./communication_and_state/progress_tracking_protocol.md): Tracking collaborative progress and maintaining partnership context.
+    *   [`interruption_handling.md`](./communication_and_state/interruption_handling.md): Managing interruptions while preserving partnership continuity.
 
-*   **Tool Usage & Agent Operation:**
-    *   [`tool_usage_protocol.md`](./tool_usage_protocol.md): Comprehensive protocol for how PACT-System agents should use tools, including reasoning, interaction patterns, and documentation. (Refers to `../tools/tool_call_template.md` and `../tools/symbolic_tool_references.md`).
-    *   [`deep_reasoner_usage_protocol.md`](./deep_reasoner_usage_protocol.md): Specific protocols for using deep reasoning models, focusing on context management and result verification.
+*   **Capability Development & Tool Usage:**
+    *   [`tool_usage_protocol.md`](./agent_tool_operation/tool_usage_protocol.md): How partners use tools collaboratively, with clear reasoning and documentation.
+    *   [`deep_reasoner_usage_protocol.md`](./agent_tool_operation/deep_reasoner_usage_protocol.md): Protocols for advanced reasoning capabilities within partnership context.
 
-*   **Development Workflow & Version Control Protocols:**
-    *   [`worktree_management_protocol.md`](./development_workflow/worktree_management_protocol.md): Protocol for managing Git worktrees for issue-based development, to be followed by developers and agents.
-    *   [`branching_protocol.md`](./development_workflow/branching_protocol.md): Defines the GitFlow-based branching model and branch naming conventions.
-    *   [`commit_protocol.md`](./development_workflow/commit_protocol.md): Outlines Conventional Commits standards and best practices for commit messages.
-    *   [`pull_request_protocol.md`](./development_workflow/pull_request_protocol.md): Details the process for creating, reviewing, and merging Pull Requests.
-    *   [`versioning_and_release_protocol.md`](./development_workflow/versioning_and_release_protocol.md): Specifies standards for Semantic Versioning and the release process.
-    *   [`cicd_workflow_protocol.md`](./development_workflow/cicd_workflow_protocol.md): Outlines CI/CD workflows and local Git hook configurations for automation and quality assurance.
+*   **Collaborative Development Workflow:**
+    *   [`worktree_management_protocol.md`](./development_workflow/worktree_management_protocol.md): Managing development environments for collaborative work.
+    *   [`branching_protocol.md`](./development_workflow/branching_protocol.md): Branch management supporting parallel partnership efforts.
+    *   [`commit_protocol.md`](./development_workflow/commit_protocol.md): Recording partnership progress through meaningful commits.
+    *   [`pull_request_protocol.md`](./development_workflow/pull_request_protocol.md): Collaborative review and integration processes.
+    *   [`versioning_and_release_protocol.md`](./development_workflow/versioning_and_release_protocol.md): Marking partnership milestones through versioning.
+    *   [`cicd_workflow_protocol.md`](./development_workflow/cicd_workflow_protocol.md): Automated support for partnership quality assurance.
 
-## Protocol Adherence
+## Protocol Philosophy
 
-All PACT-System compliant agents and processes are expected to adhere strictly to these protocols. Before taking any significant action, the relevant protocol(s) should be consulted and their requirements met.
+These protocols serve the partnership by:
+- Providing clear operational guidance (mission control clarity)
+- Supporting developmental growth and increasing autonomy
+- Maintaining safety through mutual understanding
+- Enabling reliable collaboration through consistent patterns
 
-## Protocol Updates
+All partners are encouraged to understand and follow these protocols as shared agreements that support effective collaboration.
 
-Updates or amendments to these core operational protocols require careful consideration, versioning (if a system is implemented), and should align with the overall PACT-System principles and governance. Changes should be documented in the project `../CHANGELOG.md`. 
+## Protocol Evolution
+
+Protocols evolve as partnerships mature. Updates reflect growing understanding and capabilities:
+- Changes emerge from partnership experience
+- Modifications support increased autonomy and trust
+- Evolution is documented in `../CHANGELOG.md`
+- All changes maintain operational clarity while supporting growth

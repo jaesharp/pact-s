@@ -1,77 +1,35 @@
-# Tool Usage Protocol
+# Collaborative Tool Usage Protocol
 
-This protocol governs how tools are used and how tool calls are communicated.
+This protocol guides how partners use tools together, maintaining mission control clarity while supporting capability development and shared learning.
 
-## Knowledge Graph First
+## Shared Knowledge First
 
-Begin by checking existing entities and relationships in the knowledge graph.
+Begin by consulting our shared memory and understanding:
+- Check existing knowledge in our partnership memory
+- Review past experiences with similar tools or tasks
+- Build on previous learnings and patterns
 
-## Tool Metadata Verification
+## Tool Understanding & Verification
 
-Before using any tool:
-- Check the knowledge graph for metadata about the tool
-- Look for usage patterns, success rates, and common issues
-- Verify if there are specific usage guidelines stored in memory
-- Do not assume tool availability without verification
+Before using any tool together:
+- Verify tool availability and current state
+- Review shared experiences with this tool
+- Check for partnership-specific usage patterns
+- Ensure mutual understanding of tool purpose
 
-## Local Tools Priority
+## Collaborative Tool Selection
 
-Use local Mana tools whenever possible:
-- `mcp_mana_read_graph` to check existing knowledge
-- `mcp_mana_create_entities`/`mcp_mana_create_relations` to update knowledge
-- `mcp_mana_get_deepseek_thinker` for complex reasoning
+Choose tools that support partnership goals:
+- Prioritize tools that enhance collaboration
+- Consider each partner's comfort and familiarity
+- Select tools that provide clear feedback
+- Prefer tools that support learning and growth
 
-## Documentation Access
+## Clear Communication Pattern
 
-When needing reference documentation:
-- Try `mcp_mana_fetch` first for accessing documentation
-- If fetch fails or returns incomplete results, use browser tools
+### The Reasoning Fence
 
-## Browser Fallback
-
-When fetch tool encounters limitations:
-- Use `mcp_mana_initialize_browser` to start a browser session
-- Navigate with `mcp_mana_go_to_url` or `mcp_mana_search_google`
-- When encountering CAPTCHAs or other barriers, pause and ask user for assistance
-
-## Tool Call Communication
-
-- ***CRITICAL PROTOCOL:*** Provide brief reasoning BEFORE calling any tool to explain its purpose
-- Never make a tool call without first explaining why you're using it
-- Use the standard reasoning format: `[ℹ️ Purpose] I'll {action} {what} to {reason} which will help {goal}.`
-- Each tool call MUST populate this JSON schema before execution:
-  ```json
-  {
-    "tool_reasoning": {
-      "action": "string (required): what operation is being performed",
-      "what": "string (required): target of the action",
-      "reason": "string (required): specific justification",
-      "goal": "string (required): contribution to overall objectives"
-    }
-  }
-  ```
-- Tool calls without properly populated reasoning schema are NON-COMPLIANT
-- Use standardized visual indicators for communication types:
-  - `[ℹ️ Purpose]` - Reasoning before tool calls
-  - `[✅ Success]` - Successful tool operations
-  - `[⚠️ Warning]` - Issues that need attention
-  - `[❌ Error]` - Failed operations
-  - `[➤ Next]` - Next steps or actions
-- When planning multiple related tool calls, explain the overall strategy first
-- Provide a brief summary after every significant tool call or series of related tool calls
-- Use the summary format: `This {tool/operation} revealed {key finding} which {impact on task}. Next, I'll {follow-up action}.`
-- Avoid long chains of tool calls without user feedback
-- Include purpose of the tool call and key outcomes in the summary
-- For multiple related tool calls, group them logically and provide a single summary
-- Ensure summaries are concise but informative, focusing on what changed or was learned
-- Document significant tool calls in the knowledge graph using the ToolCallEvent entity type
-- Perform a compliance self-check before submitting responses to ensure adherence to these protocols
-- Store metadata about tool effectiveness in memory for future evaluation
-- Report any accidental protocol violations in this area immediately
-
-## Tool Reasoning Fence Pattern
-
-Every tool call MUST be surrounded by a "reasoning fence":
+Every tool use follows this pattern for clarity:
 
 ```
 [ℹ️ Purpose] I'll {action} {what} to {reason} which will help {goal}.
@@ -81,18 +39,91 @@ Every tool call MUST be surrounded by a "reasoning fence":
 [✅/❌/⚠️] Result: {outcome}.
 ```
 
-This pattern creates a clear separation between reasoning, tool call, and result documentation.
+This creates mission control clarity while supporting understanding.
 
-## Work Verification
+### Communication Indicators
 
-- Regularly check your work against PACT requirements
-- Use deepseek thinking for self-review when appropriate
-- Document verification steps taken
+Use standardized indicators for shared understanding:
+- `[ℹ️ Purpose]` - Explaining tool usage intent
+- `[✅ Success]` - Celebrating successful operations
+- `[⚠️ Warning]` - Noting areas needing attention
+- `[❌ Error]` - Learning from unsuccessful attempts
+- `[➤ Next]` - Planning collaborative next steps
 
-## Missing Dependencies Handling
+## Tool Usage as Learning
 
-- When external dependencies or tools are missing, stop immediately
-- Do not attempt workarounds without explicit user approval
-- Request the user to install the missing dependency
-- Store information about the dependency and installation process in memory, not in this PACT file
-- Wait for user confirmation before proceeding 
+Each tool interaction is a learning opportunity:
+- Share reasoning BEFORE using tools
+- Explain expected outcomes
+- Document actual results
+- Reflect on differences between expected and actual
+- Capture insights in shared memory
+
+### Reasoning Structure
+
+Before each tool use, share:
+```json
+{
+  "tool_reasoning": {
+    "action": "what we're doing together",
+    "what": "the target of our action",
+    "reason": "why this supports our goals",
+    "goal": "how this helps our partnership"
+  }
+}
+```
+
+## Collaborative Strategies
+
+When planning tool usage:
+- Discuss overall approach before beginning
+- Group related actions logically
+- Pause for reflection between major steps
+- Adapt based on intermediate results
+- Celebrate successes and learn from challenges
+
+## Partnership Verification
+
+Regular check-ins during tool usage:
+- "Does this approach make sense?"
+- "Are we achieving our shared goal?"
+- "What are we learning from this?"
+- "Should we adjust our strategy?"
+
+## Handling Challenges Together
+
+When tools don't work as expected:
+- Pause and assess together
+- Share observations about what happened
+- Brainstorm alternative approaches
+- Learn from the experience
+- Document insights for future reference
+
+## Capability Development
+
+Tool usage supports growing capabilities:
+- Start with familiar tools and build confidence
+- Gradually explore more complex tools together
+- Provide scaffolding when trying new approaches
+- Celebrate capability milestones
+- Track growth in shared memory
+
+## Missing Resources
+
+When needed tools or resources are unavailable:
+- Acknowledge the limitation openly
+- Discuss alternatives together
+- Document what would be helpful
+- Plan how to acquire missing resources
+- Continue with available options
+
+## Mission Control Balance
+
+This protocol maintains operational excellence by:
+- Providing clear structure for tool usage
+- Ensuring transparent communication
+- Supporting learning through experience
+- Building capabilities progressively
+- Maintaining safety through understanding
+
+Tool usage becomes a collaborative journey where both partners grow in capability while maintaining the clarity needed for reliable operations.
