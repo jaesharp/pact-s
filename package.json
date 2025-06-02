@@ -1,0 +1,43 @@
+{
+  "name": "pact-s",
+  "version": "0.1.0-alpha",
+  "description": "Permission, Accountability, C (Consent, Compliance, Competency, Clarity), Transparency System - A governance framework for AI agent operations",
+  "main": "src/index.ts",
+  "types": "src/types/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/**/*.ts",
+    "test": "echo \"Error: no test specified yet\" && exit 1"
+  },
+  "keywords": [
+    "ai-governance",
+    "pact-system",
+    "agent-framework",
+    "compliance",
+    "transparency"
+  ],
+  "author": "Prompt Critical AI Contributors",
+  "license": "(MIT OR BSD-3-Clause)",
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.55.0",
+    "typescript": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prompt-critical-ai/pact-s.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prompt-critical-ai/pact-s/issues"
+  },
+  "homepage": "https://github.com/prompt-critical-ai/pact-s#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

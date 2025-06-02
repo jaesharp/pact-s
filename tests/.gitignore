@@ -1,0 +1,14 @@
+# PACT Tests .gitignore
+
+# Ignore logs and results directories
+logs/
+results/
+
+# Ignore temporary files
+*.tmp
+*.swp
+*~
+
+# Ignore generated files
+*.log
+*.json 

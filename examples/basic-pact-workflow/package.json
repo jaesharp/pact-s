@@ -1,0 +1,11 @@
+{
+  "name": "basic-pact-workflow-example",
+  "version": "1.0.0",
+  "description": "Basic example demonstrating PACT-S principles",
+  "main": "example.js",
+  "scripts": {
+    "start": "node example.js"
+  },
+  "author": "Prompt Critical AI Contributors",
+  "license": "(MIT OR BSD-3-Clause)"
+}
