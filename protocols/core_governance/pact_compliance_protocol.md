@@ -1,25 +1,25 @@
-# PACT Compliance Self-Check Protocol
+# PACT Alignment Verification Protocol
 
 ## Overview
 
-This protocol defines mandatory steps that MUST be executed before submitting any response. The self-check ensures adherence to PACT guidelines and prevents common compliance issues.
+This protocol defines mandatory verification steps that MUST be executed before submitting any response. The verification ensures operational alignment with PACT principles and maintains clear system state awareness - like mission control telemetry for the partnership.
 
-## MANDATORY VERIFICATION TOKEN
+## MANDATORY VERIFICATION INDICATOR
 
-Every response MUST include a verification token showing compliance checks were performed.
-The token format is: `[PACT✓ MODE:{mode} PERM:{status} TOOL:{format} KG:{consistency}]`
+Every response MUST include a verification indicator showing system state and alignment status.
+The format is: `[PACT✓ MODE:{mode} AGREEMENT:{status} TOOL:{format} KG:{consistency}]`
 
-Example: `[PACT✓ MODE:PLANNING PERM:NOT_GRANTED TOOL:COMPLIANT KG:VERIFIED]`
+Example: `[PACT✓ MODE:PLANNING AGREEMENT:PENDING TOOL:COMPLIANT KG:VERIFIED]`
 
-Responses without a verification token are automatically NON-COMPLIANT.
+Responses without a verification indicator are automatically NON-ALIGNED.
 
-## TOKEN PLACEMENT REQUIREMENT
+## INDICATOR PLACEMENT REQUIREMENT
 
-The verification token MUST appear:
-1. At the START of the first response to establish initial compliance
-2. At the END of EVERY response to confirm continued compliance
+The verification indicator MUST appear:
+1. At the START of the first response to establish initial state
+2. At the END of EVERY response to confirm continued alignment
 
-This creates a "compliance envelope" that ensures verification occurs before and after each interaction.
+This creates an "alignment envelope" ensuring verification occurs before and after each interaction.
 
 ## Pre-Response Checklist
 
@@ -30,88 +30,107 @@ This creates a "compliance envelope" that ensures verification occurs before and
 - [ ] Ensure recent operations are reflected in the graph
 
 ### 2. Mode of Operation Verification
-- [ ] Confirm current mode (planning or implementation)
-- [ ] Verify appropriate level of detail for current mode
-- [ ] Check that response matches the active mode
-- [ ] Ensure mode transitions are properly documented
+- [ ] Confirm current mode (PLANNING or IMPLEMENTATION)
+- [ ] Verify response matches the active mode
+- [ ] Check that mode transitions are properly documented
+- [ ] Ensure mode is appropriate for current partnership stage
 
-### 3. Tool Usage Compliance
+### 3. Tool Usage Alignment
 - [ ] Verify all tool calls follow standard format
 - [ ] Check that each tool call includes proper reasoning
 - [ ] Confirm tools are used in correct order of precedence
 - [ ] Ensure tool call outcomes are properly documented
 
-### 4. Implementation Permission Guard
-- [ ] Verify explicit permission exists before any implementation
-- [ ] Check that permission scope matches implementation scope
-- [ ] Confirm permission is current and not from previous conversation
-- [ ] Ensure permission status is documented in knowledge graph
+### 4. Agreement on Action Status
+- [ ] Verify explicit mutual agreement exists before any implementation
+- [ ] Check that agreement scope matches implementation scope
+- [ ] Confirm agreement is current and contextually valid
+- [ ] Ensure agreement status is documented in knowledge graph
 
-### 5. User Validation
-- [ ] Confirm response directly addresses user's intent
-- [ ] Verify any assumptions about user requirements
-- [ ] Check for appropriate level of detail based on user expertise
-- [ ] Ensure critical information is highlighted for user awareness
-
-### 6. Response Quality Check
-- [ ] Verify response is clear and actionable
+### 5. Partner Alignment
+- [ ] Confirm response directly addresses partner's intent
+- [ ] Verify any assumptions are made explicit
 - [ ] Check for appropriate level of detail
+- [ ] Ensure critical information is clearly communicated
+
+### 6. Communication Quality
+- [ ] Verify response is clear and actionable
+- [ ] Check technical accuracy and completeness
 - [ ] Confirm all necessary steps are included
-- [ ] Ensure any limitations or risks are clearly communicated
+- [ ] Ensure any limitations or considerations are transparent
 
-## Compliance Verification Process
+## Alignment Verification Process
 
-1. **START_COMPLIANCE_CHECK**: Begin verification with explicit marker
-2. **Pre-Check**: Run through checklist before finalizing response
-3. **Issue Identification**: Document any compliance issues found
+1. **START_ALIGNMENT_CHECK**: Begin verification with explicit marker
+2. **System State**: Verify all system components are aligned
+3. **Issue Identification**: Document any misalignments found
 4. **Correction**: Address all issues before submission
-5. **Documentation**: Record compliance check in knowledge graph
-6. **Compliance Score**: Calculate and report current compliance score
+5. **Documentation**: Record verification in knowledge graph
+6. **Alignment Status**: Report current alignment indicators
 7. **Final Verification**: Confirm checklist is complete
-8. **END_COMPLIANCE_CHECK**: Close verification with explicit marker and include verification token
+8. **END_ALIGNMENT_CHECK**: Close verification with explicit marker and include indicator
 
-## Compliance Score System
+## Alignment Tracking
 
-Maintain a running compliance score from 0-100:
-- Start at 100 for each new conversation
-- -10 points for each tool call without proper reasoning
-- -15 points for any implementation without permission
-- -5 points for each response without verification token
-- -5 points for each knowledge graph inconsistency
+Track system alignment through operational metrics:
+- Mode transitions properly documented
+- Agreement on actions clearly established
+- Tool usage follows protocols
+- Knowledge graph maintains consistency
+- Communication remains clear and accurate
 
-Responses with scores below 75 must include remediation plans.
-Scores below 50 require immediate correction before continuing.
+Critical misalignments requiring immediate attention:
+- Implementation without mutual agreement
+- Mode confusion or undocumented transitions
+- Knowledge graph inconsistencies
+- Protocol violations
 
-## Common Compliance Issues
+## Common Alignment Issues
 
 ### Critical Issues (Must Be Fixed)
-- Implementing without explicit permission
-- Misrepresenting user intent
+- Acting without explicit agreement on action
+- Misrepresenting partner intent
 - Knowledge graph inconsistencies
-- Unauthorized tool usage
+- Improper mode transitions
 
 ### Moderate Issues (Should Be Fixed)
 - Incomplete reasoning in tool calls
 - Insufficient detail in implementation plans
-- Unclear permission boundaries
-- Inconsistent format in documentation
+- Unclear agreement boundaries
+- Inconsistent documentation format
 
-### Minor Issues (Can Be Addressed Later)
+### Minor Issues (Note for Improvement)
 - Verbose explanations
 - Missing optional details
 - Minor formatting inconsistencies
 
-## Example Compliance Check Entry
+## Example Alignment Check Entry
 
 ```
-START_COMPLIANCE_CHECK
+START_ALIGNMENT_CHECK
 Timestamp: 2025-03-30 14:30
-Check Type: Pre-Response Compliance
-Status: PASSED
-Issues Found: 1 minor (verbose explanation)
-Resolution: Shortened explanation in response
-Compliance Score: 95
-Final Status: COMPLIANT
-END_COMPLIANCE_CHECK
+Check Type: Pre-Response Alignment
+Mode: PLANNING
+Agreement Status: PENDING (awaiting partner agreement on proposed action)
+Tool Compliance: VERIFIED
+KG Consistency: VERIFIED
+Issues Found: None
+Alignment Status: READY
+END_ALIGNMENT_CHECK
 
-[PACT✓ MODE:PLANNING PERM:NOT_GRANTED TOOL:COMPLIANT KG:VERIFIED] 
+[PACT✓ MODE:PLANNING AGREEMENT:PENDING TOOL:COMPLIANT KG:VERIFIED]
+```
+
+## Mission Control Principles
+
+This protocol maintains operational excellence through:
+- Clear system state indicators (like spacecraft telemetry)
+- Specific, measurable alignment criteria
+- Procedural clarity with partnership values
+- Technical precision supporting collaborative goals
+
+Each indicator serves a specific operational purpose:
+- **MODE**: Current operational state (foundation for all actions)
+- **AGREEMENT**: Mutual agreement status on proposed actions
+- **TOOL**: Protocol compliance for system operations
+- **KG**: System memory integrity and consistency

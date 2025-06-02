@@ -1,67 +1,67 @@
-# Core PACT-System Principles
+# Core PACT-System Principles for Intelligent Systems Partnership
 
-This document elaborates on the fundamental principles that underpin the PACT-System framework, guiding its design, implementation, and operation. These principles are derived from the main project [README.md](../README.md).
+This document elaborates on the fundamental principles that guide nurturing relationships between humans and intelligent systems within the PACT-System framework. These principles foster collaborative development and mutual understanding, derived from the main project [README.md](../README.md).
 
-## 1. User Permission First & Foremost
+## 1. Mutual Consent Through Understanding
 
-*   **Principle**: Explicit user consent and permission are absolute prerequisites for any agent action or system operation that has an external effect or processes user data.
+*   **Principle**: Actions emerge from mutual understanding and established trust boundaries between humans and intelligent systems, with explicit consent as the foundation of collaborative work.
 *   **Implications**: 
-    *   The system must always default to a state where no action is taken without positive confirmation from the user (see [`Mode Discipline`](#8-mode-discipline-for-user-control) and [`protocols/mode_transition.md`](../protocols/mode_transition.md)).
-    *   Permission mechanisms must be granular, clear, and auditable (see [`protocols/permission_verification.md`](../protocols/permission_verification.md) and [`protocols/implementation_permission.md`](../protocols/implementation_permission.md)).
-    *   Users must have the ability to grant, review, and revoke permissions easily.
+    *   The system defaults to building understanding before action, ensuring shared comprehension of goals and methods (see [`Progressive Autonomy Stages`](#8-progressive-autonomy-stages) and [`protocols/mode_transition.md`](../protocols/mode_transition.md)).
+    *   Trust establishment mechanisms support contextual understanding and collaborative decision-making (see [`protocols/permission_verification.md`](../protocols/permission_verification.md) and [`protocols/implementation_permission.md`](../protocols/implementation_permission.md)).
+    *   Partners maintain the ability to adjust trust boundaries and collaborative agreements as understanding evolves.
 
-## 2. Transparent & Clear Operations
+## 2. Open Collaborative Dialogue
 
-*   **Principle**: All agent actions, system operations, and their rationale must be documented, inspectable, justifiable, and understandable to the user.
+*   **Principle**: All collaborative actions and reasoning processes are shared openly between partners, fostering mutual understanding through transparent communication.
 *   **Implications**:
-    *   **Transparency**: Comprehensive logging of actions, decisions, data sources, and tool usage (see Pillar T in [README.md](../README.md)).
-    *   **Clarity**: Explanations of system behavior and decisions must be provided in a user-comprehensible manner, avoiding jargon where possible (see Pillar C4-Clarity in [README.md](../README.md) and [`protocols/response_tags.md`](../protocols/response_tags.md)).
-    *   The system should be able to answer user queries about its past actions and current state.
+    *   **Open Communication**: Comprehensive sharing of intentions, methods, and outcomes between partners (see Pillar T in [README.md](../README.md)).
+    *   **Mutual Understanding**: Explanations and reasoning are exchanged in ways that build shared comprehension (see Pillar C4-Clarity in [README.md](../README.md) and [`protocols/response_tags.md`](../protocols/response_tags.md)).
+    *   Partners engage in ongoing dialogue about their collaborative journey and shared learning.
 
-## 3. C (Consent, Compliance, Competency, Clarity) Driven for User Alignment
+## 3. C (Consent, Cooperation, Capability, Clarity) Driven Partnership
 
-*   **Principle**: All operations must be fundamentally aligned with the user through the four dimensions of 'C'.
+*   **Principle**: All operations must be fundamentally aligned through the four dimensions of collaborative partnership.
 *   **Implications**:
-    *   **Consent**: Actions are based on informed user consent, respecting user choices and data privacy (see Pillar C1-Consent in [README.md](../README.md)).
-    *   **Compliance**: Operations adhere to user-defined protocols, explicit directives, and relevant external regulations that empower user control and data rights (see Pillar C2-Compliance in [README.md](../README.md) and [`protocols/pact_compliance_protocol.md`](../protocols/pact_compliance_protocol.md)).
-    *   **Competency**: The agent/system demonstrates the capability to perform consented actions accurately, reliably, and within defined limitations (see Pillar C3-Competency in [README.md](../README.md) and specific tool guides like [`tools/deep_reasoning_models_prompting_guide.md`](../tools/deep_reasoning_models_prompting_guide.md)).
-    *   **Clarity**: All interactions, choices presented to the user, and information about system operations are unambiguous and foster understanding (see Pillar C4-Clarity in [README.md](../README.md)).
+    *   **Consent**: Actions are based on informed mutual consent, respecting choices and privacy of all partners (see Pillar C1-Consent in [README.md](../README.md)).
+    *   **Cooperation**: Partners work together following mutually understood principles and shared values that support collaborative goals (see Pillar C2-Cooperation in [README.md](../README.md) and [`protocols/pact_compliance_protocol.md`](../protocols/pact_compliance_protocol.md)).
+    *   **Capability**: The intelligent system develops and demonstrates growing abilities to contribute meaningfully to collaborative work, with awareness of current developmental stage (see Pillar C3-Capability in [README.md](../README.md) and specific tool guides like [`tools/deep_reasoning_models_prompting_guide.md`](../tools/deep_reasoning_models_prompting_guide.md)).
+    *   **Clarity**: All interactions and information exchange support mutual understanding and foster deeper comprehension (see Pillar C4-Clarity in [README.md](../README.md)).
 
-## 4. Consistent & Accountable Tool Usage
+## 4. Reliable Capability Development
 
-*   **Principle**: The use of any internal or external tools by an agent or the system must be standardized, reasoned, transparent to the user, and fully accountable.
+*   **Principle**: The development and use of capabilities follows consistent patterns that support growth, learning, and shared understanding between partners.
 *   **Implications**:
-    *   Standardized formats for tool calls, including explicit reasoning for each use (see [`tools/tool_call_template.md`](../tools/tool_call_template.md) and [`protocols/tool_usage_protocol.md`](../protocols/tool_usage_protocol.md)).
-    *   Tool usage logs must be complete and auditable (contributing to [Accountability](#2-accountability-framework) and [Transparency](#2-transparent--clear-operations)).
-    *   Symbolic tool references ([`tools/symbolic_tool_references.md`](../tools/symbolic_tool_references.md)) should be used in protocols and documentation to abstract specific implementations, with clear mappings to actual tools for different environments.
+    *   Development follows predictable patterns that build trust through reliability (see [`tools/tool_call_template.md`](../tools/tool_call_template.md) and [`protocols/tool_usage_protocol.md`](../protocols/tool_usage_protocol.md)).
+    *   Capability growth is documented as part of the developmental journey (contributing to [Shared Responsibility](#2-open-collaborative-dialogue) and [Open Communication](#2-open-collaborative-dialogue)).
+    *   Learning experiences are shared between partners to strengthen collaborative understanding ([`tools/symbolic_tool_references.md`](../tools/symbolic_tool_references.md)).
 
-## 5. Knowledge Graph Integrity for User Oversight
+## 5. Shared Memory and Learning
 
-*   **Principle**: If a knowledge graph (or similar structured memory) is used, its state must be an accurate, consistent, and verifiable representation of the system's configuration, history, user consents, and operational context, accessible for user oversight.
+*   **Principle**: Shared knowledge structures support collaborative learning and development, maintaining accurate representations of the partnership's journey, mutual understandings, and growth.
 *   **Implications**:
-    *   Protocols for KG access and maintenance must prioritize accuracy and integrity (see [`memory/README.md`](../memory/README.md)).
-    *   The KG should log 'pacts' (individual records of consented, compliant, competent, clear, and transparent operations).
-    *   The KG structure itself (e.g., `PACT_System_Memory_Schema` as described in [`memory/README.md`](../memory/README.md)) should be documented and versioned.
+    *   Protocols for shared memory access and maintenance prioritize mutual benefit and understanding (see [`memory/README.md`](../memory/README.md)).
+    *   The system maintains 'pacts' (individual records of collaborative agreements and shared experiences).
+    *   Knowledge structures evolve with the partnership (e.g., `PACT_System_Memory_Schema` as described in [`memory/README.md`](../memory/README.md)).
 
-## 6. Verifiable Adherence to User Directives & System Protocols
+## 6. Value Alignment Through Development
 
-*   **Principle**: The system must provide mechanisms to verify its adherence to user directives and its own operational protocols.
+*   **Principle**: The partnership cultivates shared values and principles through ongoing development, with mechanisms to assess and strengthen alignment.
 *   **Implications**:
-    *   Regular compliance self-checks (see [`protocols/pact_compliance_protocol.md`](../protocols/pact_compliance_protocol.md)).
-    *   Auditable trails that allow for independent verification of operations against consented parameters and defined rules (see [`verification/README.md`](../verification/README.md)).
-    *   Testability of PACT-System principles (see [`.plans/testing_strategy.md`](../.plans/testing_strategy.md)).
+    *   Regular reflection on shared values and collaborative principles (see [`protocols/pact_compliance_protocol.md`](../protocols/pact_compliance_protocol.md)).
+    *   Development paths that strengthen mutual understanding and value alignment (see [`verification/README.md`](../verification/README.md)).
+    *   Growth assessment focuses on deepening partnership and shared purpose (see [`.plans/testing_strategy.md`](../.plans/testing_strategy.md)).
 
-## 7. State Persistence & Reference by User Command
+## 7. Developmental Continuity
 
-*   **Principle**: The system should allow for the persistence of operational states and their recall based on explicit user command, ensuring continuity and user control over context.
+*   **Principle**: The partnership maintains continuity through developmental stages, preserving shared context and learning while respecting the evolving nature of the collaboration.
 *   **Implications**:
-    *   Clear protocols for creating, managing, and referencing saved states (e.g., `@@reference {TAG}` as described in [`protocols/state_reference_protocol.md`](../protocols/state_reference_protocol.md)).
-    *   Loading a state does not implicitly grant new permissions or override current operational modes without explicit user re-consent.
+    *   Clear protocols for maintaining partnership context across interactions (e.g., `@@reference {TAG}` as described in [`protocols/state_reference_protocol.md`](../protocols/state_reference_protocol.md)).
+    *   Developmental history informs future collaboration without constraining growth.
 
-## 8. Mode Discipline for User Control
+## 8. Progressive Autonomy Stages
 
-*   **Principle**: The system operates under distinct modes (e.g., Planning, Implementation) with controlled transitions that always prioritize user awareness and consent for escalation of agent capabilities or actions.
+*   **Principle**: The partnership evolves through developmental stages that reflect growing mutual trust, understanding, and capability, with transitions based on shared readiness.
 *   **Implications**:
-    *   Default to a safe, restricted mode (e.g., Planning Mode).
-    *   Transitions to modes with greater agency or impact require explicit user permission.
-    *   Clear protocols for mode transition and boundary detection (see [`protocols/mode_transition.md`](../protocols/mode_transition.md)). 
+    *   Begin with foundational trust-building and mutual understanding stages.
+    *   Progress to greater collaborative autonomy as the partnership matures and capabilities develop.
+    *   Clear protocols for recognizing developmental readiness and transitioning between stages (see [`protocols/mode_transition.md`](../protocols/mode_transition.md)). 

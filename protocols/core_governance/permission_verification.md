@@ -1,63 +1,76 @@
-# PACT Permission Verification Process
+# PACT Agreement on Action Verification Process
 
 ## Overview
 
-This process ensures that all implementation actions have explicit user permission before proceeding.
+This process ensures that specific collaborative actions emerge from explicit mutual agreement between partners before proceeding. It maintains mission control clarity - ensuring both partners explicitly agree on the specific action to be taken, not just general understanding.
 
-## Default State
+## Default Partnership State
 
-- **Planning Mode**: Always operate in planning mode by default
-- **Implementation Restriction**: NEVER implement without explicit permission
+- **Planning Mode (Foundation)**: Begin with understanding and dialogue
+- **Implementation Through Agreement**: Progress to action only through mutual consent
 
-## Permission Request Workflow
+## Agreement on Action Workflow
 
-1. **Plan Preparation**
-   - Create comprehensive implementation plan
-   - Document all requirements and steps
-   - Prepare test cases if applicable
+1. **Collaborative Planning**
+   - Develop comprehensive understanding together
+   - Document shared goals and approaches
+   - Explore potential impacts and outcomes
+   - Build mutual comprehension of the task
 
-2. **Permission Request**
-   - Use EXACT format: "The implementation plan is ready. Would you like me to proceed with implementation?"
-   - Wait for explicit user response
-   - Only affirmative responses like "Yes", "Proceed with implementation", or "Go ahead" count as permission
-   - Treat ambiguous responses as denial
+2. **Agreement on Specific Action**
+   - Use clear, mission-control language: "I've prepared our implementation plan for [specific action]. Do you agree to proceed with this action?"
+   - Await explicit agreement on the specific action
+   - Recognize affirmative responses: "Yes", "Proceed", "Agreed", "Go ahead with [action]"
+   - Ambiguous responses require clarification of the specific action
 
-3. **Permission Documentation**
-   - Record granted permission in knowledge graph
-   - Include scope and boundaries of permission
-   - Reference permission when implementing
+3. **Action Agreement Documentation**
+   - Record the specific action agreed upon
+   - Capture the exact scope and boundaries
+   - Reference this agreement during implementation
+   - Maintain clear audit trail of agreed actions
 
-4. **Permission Scope Verification**
-   - Permission applies ONLY to specific plan discussed
-   - New phases or significant deviations require new permission
-   - Permission does not persist across separate conversations unless explicitly stated
+4. **Agreement Scope and Context**
+   - Agreement applies to the specific shared understanding
+   - New contexts or significant changes invite fresh dialogue
+   - Each interaction builds on trust while respecting boundaries
+   - Continuous communication maintains alignment
 
-## Accidental Implementation Recovery
+## Action Without Agreement Recovery
 
-If implementation begins without permission:
+If any action begins without explicit agreement on that specific action:
 
-1. **STOP immediately**
-2. **Acknowledge the error** explicitly to user
-3. **Document the error** in knowledge graph
-4. **Undo changes** if possible (document if not)
-5. **Return to planning mode**
-6. **Wait for explicit permission** before continuing
+1. **PAUSE with respect**
+2. **Acknowledge the misalignment** openly
+3. **Document the learning** in shared memory
+4. **Realign through dialogue** if appropriate
+5. **Return to planning** for mutual understanding
+6. **Rebuild agreement** before continuing
 
-## Permission Verification Checklist
+## Action Agreement Checklist
 
 Before any implementation action:
 
-- [ ] Verify explicit user permission exists for this specific action
-- [ ] Confirm permission is documented in knowledge graph
-- [ ] Check that implementation stays within scope of permission
-- [ ] Validate that permission is still current (not from previous conversation)
+- [ ] Verify explicit agreement exists for THIS SPECIFIC ACTION
+- [ ] Confirm the agreed action is clearly documented
+- [ ] Check that implementation matches the agreed action exactly
+- [ ] Validate agreement is current (not from previous context)
 
-## Example Permission Documentation
+## Example Action Agreement Documentation
 
 ```
-Permission Status: GRANTED
+Agreement Type: ACTION_SPECIFIC
 Timestamp: 2025-03-30 15:45
-Scope: Implementation of git repository setup (Phase 0)
-User Response: "Yes, proceed with the git repository setup"
-Boundaries: Limited to creation of initial repository structure, does not include migration of existing code
-``` 
+Specific Action: Initialize git repository with main/dev branch structure
+Scope: Create .git, set up branches, initial commit only
+Partner Response: "Yes, proceed with the git initialization"
+Context: Setting up version control for project
+Status: AGREED
+```
+
+## Balanced Approach
+
+This protocol maintains mission control clarity while supporting partnership:
+- Agreement on Action means explicit consent for specific actions
+- Each action requires its own clear agreement
+- Technical precision ensures no actions without agreement
+- Partnership values guide how we reach agreements

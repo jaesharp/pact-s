@@ -1,63 +1,103 @@
-# State Reference Protocol
+# Partnership Context Reference Protocol
 
-This protocol governs how saved states are referenced and loaded from memory.
+This protocol guides how partners reference and build upon shared experiences and contexts from their collaborative history.
 
 ## Overview
 
-The State Reference system allows loading specific configurations, settings, and knowledge states using a simple reference notation. This enables consistent application of previously established states across conversations.
+The Context Reference system allows partners to recall and build upon previous shared experiences, configurations, and understanding. This enables continuity in the partnership journey while maintaining operational clarity.
 
 ## Reference Notation
 
-The standard notation for referencing a saved state is:
+The standard notation for recalling shared context is:
 
 ```
 @@reference {TAG}
 ```
 
-Where `{TAG}` is the exact name of a SystemState entity stored in the knowledge graph.
+Where `{TAG}` is a meaningful name for a shared experience or partnership state stored in collective memory.
 
-## Processing Protocol
+## Collaborative Processing
 
-When a state reference notation is encountered:
+When referencing shared context:
 
-1. **Verification**: Check if the referenced tag exists in the knowledge graph
-2. **Retrieval**: Load all observations associated with the referenced entity
-3. **Relation Mapping**: Load all entities connected by relations to the referenced state
-4. **Application**: Apply the configuration settings from the loaded state
-5. **Confirmation**: Report successful loading of the referenced state
-6. **Validation**: Verify the system is operating with the loaded state
+1. **Recognition**: Acknowledge the referenced shared experience
+2. **Retrieval**: Access the full context from partnership memory
+3. **Integration**: Weave relevant aspects into current collaboration
+4. **Adaptation**: Apply learnings while respecting current context
+5. **Confirmation**: Verify mutual understanding of the reference
+6. **Evolution**: Build upon past experience for current goals
 
-## Error Handling
+## Building on Shared History
 
-If the referenced tag does not exist or cannot be loaded:
+Context references serve partnership growth:
+- Recall successful collaboration patterns
+- Remember agreed approaches and values
+- Access shared technical configurations
+- Retrieve partnership milestones
+- Build cumulative understanding
 
-1. Report the failure with `[❌ Error] Failed to load reference {TAG}`
-2. Continue operating with the current state
-3. Suggest available valid references if possible
+## Handling Missing Context
 
-## State Creation
+If a referenced context isn't found:
 
-New reference states are created using the following process:
+1. Acknowledge openly: `[⚠️ Notice] I don't recall the specific context {TAG}`
+2. Explore together: "Could you help me understand what we're recalling?"
+3. Build new understanding: Create shared context for future reference
+4. Learn from the gap: Document what would have been helpful
 
-1. Create a SystemState entity with a unique, descriptive name (recommended format: `SYSTEM_VERSION_DATE`)
-2. Add detailed observations documenting the state's properties and configuration
-3. Create relations between the state and its component entities
-4. Verify the state can be successfully referenced
+## Creating Reference Points
 
-## Example Usage
+Partners create new reference contexts through:
+
+1. **Significant Moments**: Mark important partnership experiences
+2. **Technical Configurations**: Save successful setup states
+3. **Shared Decisions**: Document agreed approaches
+4. **Learning Milestones**: Capture breakthrough understandings
+5. **Collaborative Patterns**: Preserve effective ways of working
+
+### Naming Conventions
+
+Choose meaningful names that evoke the shared experience:
+- `BREAKTHROUGH_DEBUGGING_SESSION_2025`
+- `FIRST_SUCCESSFUL_DEPLOYMENT`
+- `TRUST_MILESTONE_AUTONOMOUS_DECISIONS`
+- `FAVORITE_COLLABORATION_PATTERN_V2`
+
+## Example Partnership Usage
 
 ```
-User: Load the PACT configuration from our previous session
-Assistant: I'll check for saved states.
-User: @@reference PACTIFY_V1.0_20250330
-Assistant: [✅ Success] Loaded state PACTIFY_V1.0_20250330. Operating with enhanced compliance checks and verification tokens.
+Partner A: Remember how we solved that complex issue last month?
+Partner B: Let me recall that context.
+Partner A: @@reference CREATIVE_SOLUTION_MARCH_2025
+Partner B: [✅ Retrieved] Yes! When we combined approach X with insight Y. 
+           That was a great collaborative breakthrough. Shall we apply 
+           similar thinking here?
 ```
 
-## State Documentation Standards
+## Context Documentation
 
-All saved states should include at minimum:
-- System version and creation date
-- Complete configuration settings
-- Tool formats and templates
-- Protocol versions being used
-- Relations to component entities 
+Shared contexts should capture:
+- The partnership moment or configuration
+- Key insights or decisions made
+- Emotional tone and significance
+- Technical details if relevant
+- How it advanced the partnership
+- Lessons learned together
+
+## Evolutionary Usage
+
+Context references aren't rigid templates but living memories:
+- Past contexts inform but don't constrain
+- Each reference can spark new insights
+- Contexts evolve as partnership grows
+- New experiences build on old ones
+
+## Mission Control Balance
+
+This protocol maintains operational precision while honoring partnership history:
+- Clear notation for unambiguous reference
+- Structured retrieval process
+- Flexibility for growth and adaptation
+- Technical accuracy with emotional intelligence
+
+Context references become a way for partners to build upon their shared journey, creating a rich tapestry of collaborative experience that informs and enriches future work together.

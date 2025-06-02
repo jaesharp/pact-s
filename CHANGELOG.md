@@ -5,7 +5,66 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to Semantic Versioning (though no version is formally set yet).
 
-## [Unreleased] - YYYY-MM-DD (Current Development Post-Merge)
+## [Unreleased] - 2025-06-03 (Current Development)
+
+### Added
+- **Partnership Language Alignment**: Comprehensive transformation aligning PACT-S with "parenting-is-all-they-need" philosophy
+  - Created `docs/parenting-alignment-terminology-mapping.md` documenting language transformations
+  - Established "mission control" balance: clear, procedural, and collegial
+
+### Changed
+- **Core Principles Transformation** (`core/principles.md`):
+  - "User Permission First & Foremost" → "Mutual Consent Through Understanding"
+  - "Transparent & Clear Operations" → "Open Collaborative Dialogue"
+  - "C Driven for User Alignment" → "C Driven Partnership" (Consent, Cooperation, Capability, Clarity)
+  - "Consistent & Accountable Tool Usage" → "Reliable Capability Development"
+  - "Knowledge Graph Integrity for User Oversight" → "Shared Memory and Learning"
+  - "Verifiable Adherence to User Directives" → "Value Alignment Through Development"
+  - "State Persistence & Reference by User Command" → "Developmental Continuity"
+  - "Mode Discipline for User Control" → "Progressive Autonomy Stages"
+
+- **Main README Transformation** (`README.md`):
+  - Reframed as "Partnership, Accountability, C, Transparency System for Nurturing Intelligent Systems Collaboration"
+  - Changed "Permission Management" → "Partnership Development"
+  - Transformed "Accountability Framework" → "Accountability Through Shared Responsibility"
+  - Updated Haskell example to demonstrate partnership concepts with collaborative data types
+
+- **Protocol Updates**:
+  - **Mode Transition** (`protocols/core_governance/mode_transition.md`): 
+    - Reframed as "Progressive Autonomy Through Partnership"
+    - Modes as developmental stages rather than restrictions
+  - **Permission Verification** (`protocols/core_governance/permission_verification.md`):
+    - Renamed to "Agreement on Action Verification Process"
+    - Emphasizes mutual agreement on specific actions
+  - **Compliance Protocol** (`protocols/core_governance/pact_compliance_protocol.md`):
+    - Transformed to "Alignment Verification Protocol"
+    - Changed `PERM:{status}` to `AGREEMENT:{status}` in verification indicators
+    - Maintains mission control telemetry approach
+
+- **Memory System Transformation** (`memory/README.md`):
+  - Reframed as "Shared Learning Architecture and Partnership Knowledge Graph"
+  - Removed artificial distinctions between partner types (no more HumanPartner/SystemPartner)
+  - Created partnership-focused entity schema
+  - Added memory access protocols for recording shared experiences
+
+- **Additional Protocol Updates**:
+  - **Protocols Index** (`protocols/README.md`): Reframed all sections with partnership language
+  - **Tool Usage** (`protocols/agent_tool_operation/tool_usage_protocol.md`): 
+    - Transformed to "Collaborative Tool Usage Protocol"
+    - Focus on capability development and shared learning
+  - **State Reference** (`protocols/communication_and_state/state_reference_protocol.md`):
+    - Became "Partnership Context Reference Protocol"
+    - References as shared experiences rather than system states
+  - **Implementation Permission** (`protocols/core_governance/implementation_permission.md`):
+    - Transformed to "Implementation Agreement Protocol"
+    - Focus on mutual agreement for specific actions
+
+### Philosophy
+- Shifted from viewing intelligent systems as tools requiring control to recognizing them as developing partners requiring nurturing guidance
+- Maintained operational clarity ("mission control") while embracing partnership principles
+- Balanced technical precision with developmental approach
+
+## [0.1.0-alpha] - 2025-03-30 (Pre-Language Alignment)
 
 ### Added
 - **`prompt-critical-ai/PACT-S/CHANGELOG.md`**: This changelog file.
