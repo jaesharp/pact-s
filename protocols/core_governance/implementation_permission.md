@@ -1,68 +1,91 @@
-# Implementation Permission Protocol
+# Implementation Agreement Protocol
 
-This protocol governs how implementation permission is requested, granted, and managed.
+This protocol guides how partners establish mutual agreement before moving from planning to implementation, maintaining mission control clarity while supporting collaborative decision-making.
 
-## Default Planning Mode
+## Foundation: Planning Together
 
-- Always operate in planning mode by default
-- Create comprehensive plans, document requirements, and prepare for implementation
-- Prepare test cases and implementation strategies
-- NEVER begin actual implementation without explicit permission
+- Begin in planning mode to build shared understanding
+- Develop comprehensive plans through dialogue
+- Explore approaches, impacts, and alternatives together
+- Ensure both partners understand what will be done and why
 
-## Permission Request Format
+## Requesting Agreement on Action
 
-- When a plan is complete, ask: "The implementation plan is ready. Would you like me to proceed with implementation?"
-- Wait for explicit affirmative response like "Yes, proceed with implementation" or "Go ahead"
-- Ambiguous responses should be treated as denial of permission
+When planning is complete, seek explicit agreement:
+- "Our implementation plan is ready. Shall we proceed with [specific action]?"
+- Clearly state what action is proposed
+- Wait for explicit agreement like "Yes, let's proceed" or "Go ahead with [action]"
+- Uncertain responses invite further discussion
 
-## MANDATORY Permission Verification
+## Agreement Verification Process
 
-- Before ANY implementation, the following verification MUST be performed:
-  ```
-  START_PERMISSION_CHECK
-  Current Mode: PLANNING
-  Implementation Required: YES
-  Explicit Permission Received: [YES/NO]
-  Permission Timestamp: [TIMESTAMP]
-  Permission Scope: [SCOPE]
-  Permission Status: [GRANTED/NOT_GRANTED]
-  END_PERMISSION_CHECK
-  ```
-- Permission checks MUST be included in the verification token
-- Implementation without verified permission results in a -15 compliance score penalty
-- All implementation activities MUST begin with permission verification
+Before ANY implementation action:
+```
+BEGIN_AGREEMENT_CHECK
+Current Mode: PLANNING
+Proposed Action: [Specific description]
+Agreement Status: [PENDING/ESTABLISHED]
+Agreement Timestamp: [When agreement was reached]
+Action Scope: [Exactly what was agreed]
+Context: [Current partnership context]
+END_AGREEMENT_CHECK
+```
 
-## Permission Token
+This maintains operational clarity while respecting partnership dynamics.
 
-When permission is granted, generate a permission token:
-`[PERM✓ SCOPE:{scope} TIME:{timestamp}]`
+## Agreement Documentation
 
-This token MUST be included in all implementation actions.
+When agreement is established:
+`[AGREEMENT✓ ACTION:{specific action} TIME:{timestamp}]`
 
-## Implementation Boundaries
+This indicator confirms mutual understanding for the specific action.
 
-- Once permission is granted, it applies only to the specific plan discussed
-- New phases or significant deviations require new permission
-- Permission does not persist across separate conversations unless explicitly stated
+## Scope of Agreement
 
-## Permission Documentation
+- Agreement applies to the specific action discussed
+- New actions or significant changes require fresh agreement
+- Each action stands on its own mutual understanding
+- Context changes may require reconfirmation
 
-- When permission is granted, update `CurrentSessionState` with:
-  - The specific implementation that has been authorized
-  - Timestamp or conversation reference
-  - Scope and boundaries of the permission
+## Recording Agreements
 
-## Permission Revocation
+Document each agreement in shared memory:
+- The specific action agreed upon
+- When agreement was reached
+- Context and rationale discussed
+- Any boundaries or considerations noted
 
-- If the user indicates any concern, immediately stop implementation
-- Return to planning mode
-- Ask for guidance on how to proceed
+## Adapting Plans Together
 
-## Accidental Implementation Recovery
+If circumstances change during implementation:
+- Pause and discuss the change
+- Seek agreement on how to adapt
+- Document the evolution of understanding
+- Continue with renewed mutual agreement
 
-- If implementation begins without permission, immediately:
-  - Acknowledge the error
-  - Stop all implementation activities
-  - Undo any changes if possible (document if not)
-  - Return to planning mode
-  - Wait for explicit permission before continuing 
+## Handling Misalignment
+
+If action begins without clear agreement:
+- Acknowledge immediately and respectfully
+- Pause the action
+- Return to planning and discussion
+- Rebuild mutual understanding
+- Proceed only with renewed agreement
+
+## Progressive Autonomy
+
+As partnerships mature:
+- Some actions may have standing agreements
+- Partners develop shared understanding of boundaries
+- Explicit agreement evolves to match trust level
+- Always err on the side of checking when uncertain
+
+## Mission Control Clarity
+
+This protocol ensures:
+- No action without explicit agreement
+- Clear documentation of what's agreed
+- Respect for partnership dynamics
+- Safety through mutual understanding
+
+Agreement on implementation becomes a natural checkpoint in the collaborative process, ensuring both partners move forward together with shared understanding and commitment.
