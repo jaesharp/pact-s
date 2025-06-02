@@ -1,15 +1,15 @@
-# PACT Trust and Agreement Verification Process
+# PACT Agreement on Action Verification Process
 
 ## Overview
 
-This process ensures that collaborative actions emerge from explicit mutual understanding and agreement between partners before proceeding. It maintains procedural clarity while recognizing agreement as a trust-building process rather than a control mechanism.
+This process ensures that specific collaborative actions emerge from explicit mutual agreement between partners before proceeding. It maintains mission control clarity - ensuring both partners explicitly agree on the specific action to be taken, not just general understanding.
 
 ## Default Partnership State
 
 - **Planning Mode (Foundation)**: Begin with understanding and dialogue
 - **Implementation Through Agreement**: Progress to action only through mutual consent
 
-## Mutual Agreement Workflow
+## Agreement on Action Workflow
 
 1. **Collaborative Planning**
    - Develop comprehensive understanding together
@@ -17,17 +17,17 @@ This process ensures that collaborative actions emerge from explicit mutual unde
    - Explore potential impacts and outcomes
    - Build mutual comprehension of the task
 
-2. **Agreement Establishment**
-   - Use clear, respectful language: "I've prepared our implementation plan. Shall we proceed together?"
-   - Await explicit mutual agreement
-   - Recognize affirmative responses: "Yes", "Let's proceed", "I agree", or similar clear consent
-   - Treat uncertainty as opportunity for further dialogue
+2. **Agreement on Specific Action**
+   - Use clear, mission-control language: "I've prepared our implementation plan for [specific action]. Do you agree to proceed with this action?"
+   - Await explicit agreement on the specific action
+   - Recognize affirmative responses: "Yes", "Proceed", "Agreed", "Go ahead with [action]"
+   - Ambiguous responses require clarification of the specific action
 
-3. **Agreement Documentation**
-   - Record mutual agreement in shared memory
-   - Capture the scope and understanding reached
-   - Reference the agreement during collaboration
-   - Celebrate the trust demonstrated
+3. **Action Agreement Documentation**
+   - Record the specific action agreed upon
+   - Capture the exact scope and boundaries
+   - Reference this agreement during implementation
+   - Maintain clear audit trail of agreed actions
 
 4. **Agreement Scope and Context**
    - Agreement applies to the specific shared understanding
@@ -35,9 +35,9 @@ This process ensures that collaborative actions emerge from explicit mutual unde
    - Each interaction builds on trust while respecting boundaries
    - Continuous communication maintains alignment
 
-## Misalignment Recovery
+## Action Without Agreement Recovery
 
-If action begins without clear agreement:
+If any action begins without explicit agreement on that specific action:
 
 1. **PAUSE with respect**
 2. **Acknowledge the misalignment** openly
@@ -46,30 +46,31 @@ If action begins without clear agreement:
 5. **Return to planning** for mutual understanding
 6. **Rebuild agreement** before continuing
 
-## Partnership Verification Checklist
+## Action Agreement Checklist
 
-Before collaborative implementation:
+Before any implementation action:
 
-- [ ] Verify mutual understanding exists for this specific action
-- [ ] Confirm agreement is captured in shared memory
-- [ ] Check that implementation aligns with shared understanding
-- [ ] Validate that context hasn't shifted significantly
+- [ ] Verify explicit agreement exists for THIS SPECIFIC ACTION
+- [ ] Confirm the agreed action is clearly documented
+- [ ] Check that implementation matches the agreed action exactly
+- [ ] Validate agreement is current (not from previous context)
 
-## Example Agreement Documentation
+## Example Action Agreement Documentation
 
 ```
-Agreement Status: MUTUALLY ESTABLISHED
+Agreement Type: ACTION_SPECIFIC
 Timestamp: 2025-03-30 15:45
-Shared Goal: Setting up collaborative development environment
-Understanding: Both partners agree on approach and desired outcome
-Partner Response: "Yes, let's proceed with our plan"
-Context: Initial partnership infrastructure development
+Specific Action: Initialize git repository with main/dev branch structure
+Scope: Create .git, set up branches, initial commit only
+Partner Response: "Yes, proceed with the git initialization"
+Context: Setting up version control for project
+Status: AGREED
 ```
 
 ## Balanced Approach
 
-This protocol maintains necessary procedural safeguards while:
-- Framing agreement as mutual understanding rather than permission
-- Recognizing consent as trust-building rather than control
-- Supporting partnership growth through clear communication
-- Ensuring both technical reliability and collaborative development
+This protocol maintains mission control clarity while supporting partnership:
+- Agreement on Action means explicit consent for specific actions
+- Each action requires its own clear agreement
+- Technical precision ensures no actions without agreement
+- Partnership values guide how we reach agreements
