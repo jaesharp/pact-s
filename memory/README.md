@@ -1,6 +1,6 @@
 # PACT-System Memory: Shared Learning Architecture and Partnership Knowledge Graph
 
-This document provides a comprehensive overview of the PACT-System's memory architecture as a shared learning system. The memory serves as the partnership's collective knowledge base, capturing the journey of collaborative development between humans and intelligent systems. It maintains mission control clarity while supporting partnership growth through structured knowledge sharing.
+This document provides a comprehensive overview of the PACT-System's memory architecture as a shared learning system. The memory serves as the partnership's collective knowledge base, capturing the journey of collaborative development between partners. It maintains mission control clarity while supporting partnership growth through structured knowledge sharing.
 
 ## 1. Memory System Architecture Overview
 
@@ -104,12 +104,12 @@ Visual representations help partners understand their shared journey:
 
 ## 2. Partnership Knowledge Schema (`PACT_Partnership_Memory_Schema`)
 
-The schema defines how partnership experiences and knowledge are structured. It provides the vocabulary for capturing the richness of human-AI collaboration while maintaining operational clarity.
+The schema defines how partnership experiences and knowledge are structured. It provides the vocabulary for capturing the richness of collaborative partnerships while maintaining operational clarity.
 
 ### 2.1. Core Entity Categories
 
 **A. Partnership Governance & Development:**
-*   `PartnershipInstance`: The specific human-AI partnership and its characteristics
+*   `PartnershipInstance`: The specific partnership and its unique characteristics
 *   `DevelopmentalStage`: Current partnership maturity (TrustBuilding, GuidedCollaboration, MaturePartnership)
 *   `SharedValue`: Explicitly recognized partnership values
 *   `AgreementRecord`: Mutual agreements on specific actions
@@ -119,10 +119,10 @@ The schema defines how partnership experiences and knowledge are structured. It 
 *   `AlignmentCheck`: Regular partnership health assessments
 
 **B. Partner Entities:**
-*   `HumanPartner`: Human participant with goals and preferences
-*   `SystemPartner`: AI system with capabilities and development trajectory
+*   `Partner`: Any participant in the partnership with unique identity and perspective
 *   `PartnerProfile`: Characteristics, strengths, and growth areas
 *   `CommunicationPattern`: Established interaction styles
+*   `Perspective`: Unique viewpoint each partner brings
 
 **C. Collaborative Work Entities:**
 *   `SharedGoal`: Mutually agreed objectives
